@@ -1,0 +1,17 @@
+#include<stdio.h>
+//prototype:
+int pro_of_digit(int);
+int main(){
+int n;
+printf("enter a number");
+scanf("%d",&n);
+//call
+printf("%d",pro_of_digit(n));
+}
+//definition
+int pro_of_digit(int number){
+if(number<10){
+return number;}
+else{
+return (number%10)*pro_of_digit(number/10);
+}}
