@@ -1,0 +1,19 @@
+//this program return 1 for true and 0 for false
+#include<stdio.h>
+int is_prime(int,int);
+int main(){
+int a,b;
+printf("enter a number");
+scanf("%d",&a);
+printf("%d",is_prime(a,b));
+}
+int is_prime(int n,int i){
+i=2;
+if(n%i==0&&i<n){
+return 0;
+}
+else{
+return 1;
+return is_prime(n,i+1);
+}
+}
