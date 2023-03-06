@@ -1,0 +1,15 @@
+#include<stdio.h>
+int factorial(int);
+int main(){
+int n;
+printf("enter n");
+scanf("%d",&n);
+printf("%d",factorial(n));
+}
+int factorial(int number){
+if(number==0||number==1){
+return 1;
+}else{
+return number*factorial(number-1);
+}
+}
