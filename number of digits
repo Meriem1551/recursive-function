@@ -1,0 +1,15 @@
+#include<stdio.h>
+//prototype:
+int num_of_digit(int);
+int main(){
+int n;
+printf("enter the number");
+scanf("%d",&n);
+printf("%d",num_of_digit(n));
+}
+int num_of_digit(int number){
+if(number<10){
+return 1;}
+else{
+return 1+num_of_digit(number/10);
+}}
